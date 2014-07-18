@@ -34,9 +34,9 @@ nuget {
         // Use the AferBuild to implement the copy
         AfterBuild {
             .Copy {
-                SourceFiles = "@(MyEtcFiles)"
-                DestinationFiles = "@(MyEtcFiles->'$(TargetDir)..\etc\%(RecursiveDir)%(Filename)%(Extension)')"
-                SkipUnchangedFiles = true
+                SourceFiles = "@(MyEtcFiles)";
+                DestinationFiles = "@(MyEtcFiles->'$(TargetDir)..\etc\%(RecursiveDir)%(Filename)%(Extension)')";
+                SkipUnchangedFiles = true;
                 UseHardlinksIfPossible = true;
             };
         };
