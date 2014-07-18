@@ -6,7 +6,10 @@ nuget {
         authors = {G. Watts};
         owners = {G. Watts};
         projectUrl: "https://github.com/gordonwatts/CoAppDemoPackage/";
+		licenseUrl: "http://www.nytimes.com";
+		iconUrl: "http://www.scienceagogo.com/news/img/top_quark.jpg";
         requireLicenseAcceptance: false;
+		releaseNotes: "This doesn't copy the etc content into an app that is using its final directory";
         summary: Demo package that publishes content along with DLL's in nuget packages for C++;
         description: Demo package that publishes content along with DLL's in nuget packages for C++;
         tags: data;
