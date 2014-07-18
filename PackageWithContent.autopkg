@@ -19,6 +19,9 @@ nuget {
         etc += {
             #add-all-files : Items.MyEtcFiles;
             #destination : ${build_root}\etc;
+			#output { 
+				package = redist;
+			};
         };
 
 		// We want the complete directory structure under the local etc directory to copy over.    
